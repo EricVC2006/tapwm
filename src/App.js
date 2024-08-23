@@ -5,29 +5,19 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 
 
-const produtos = [{
-  nome : "teste",
-  preco: 20.00,
-},
-{
-  nome:"teste2",
-  preco:20.00,
-},
-];
-
-
 function App() {
   const [produtos,setProdutos] = useState([]);
-  useEffect(() =>{ carregaPodutos,();
-
+  useEffect(() =>{
+     carregaPodutos();
    }, []),
+
   function carregaProdutos(){
 
     axios.get('htttps://app-api-tapwm.orderer.com/api/produtos')
-    .then(res=>(
-      setProdutos (res.data);
-      console.log(produtos);
-    ));
+    .then(res=>{
+      setProdutos ( res.data);
+      //console.log(produtos);
+    });
   }
 
   return (
