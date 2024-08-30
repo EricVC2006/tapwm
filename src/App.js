@@ -24,7 +24,7 @@ function App() {
  <div>
     <h1>Lista Produtos</h1>
     <ListaProdutos produtos = {produtos} />
-
+    <CadastroProduto carregaPodutos= {carregaPodutos}/>
  </div>
   );
 }

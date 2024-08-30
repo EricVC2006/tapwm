@@ -1,8 +1,9 @@
+import '../../index.css';
 const Produto = ({valor}) => {
     return  (
-        <div>
-            <h3>{valor.nome} </h3>
-            <p> Preço: {valor.preço} </p>
+        <div className = 'card'>
+            <h3 className = 'titulo'>{valor.nome} </h3>
+            <p className = 'subtitulo'> Preço: {valor.preço} </p>
         </div>
     );
 }
