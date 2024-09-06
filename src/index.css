@@ -33,3 +33,9 @@ code {
   padding: 16px;
   margin: 3px;
 }
+
+}
+.imagem{
+  max-width: 80%;
+  max-height: 200px;
+}
