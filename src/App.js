@@ -1,20 +1,19 @@
-import logo from './logo.svg';
+
 import './App.css';
 import ListaProdutos from './componentes/ListaProdutos';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
-import CadastroProduto from './Componentes/CadastroProduto';  
-
+import CadastroProduto from './componentes/CadastroProduto';
 
 function App() {
   const [produtos,setProdutos] = useState([]);
   useEffect(() =>{
-     carregaPodutos();
-   }, []),
+     carregaProdutos();
+   }, []);
 
   function carregaProdutos(){
 
-    axios.get('htttps://app-api-tapwm.orderer.com/api/produtos')
+    axios.get('https://app-api-tapwm.onrender.com/api/produtos')
     .then(res=>{
       setProdutos ( res.data);
       //console.log(produtos);
@@ -25,7 +24,7 @@ function App() {
  <div>
     <h1>Lista Produtos</h1>
     <ListaProdutos produtos = {produtos} />
-    <CadastroProduto carregaPodutos= {carregaPodutos}/>
+    <CadastroProduto carregaProdutos= {carregaProdutos}/>
  </div>
   );
 }
