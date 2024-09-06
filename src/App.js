@@ -3,6 +3,7 @@ import './App.css';
 import ListaProdutos from './componentes/ListaProdutos';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
+import CadastroProduto from './Componentes/CadastroProduto';  
 
 
 function App() {
