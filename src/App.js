@@ -4,6 +4,7 @@ import ListaProdutos from './componentes/ListaProdutos';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import CadastroProduto from './componentes/CadastroProduto';
+import BarraMenu from './componentes/BarraMenu';
 
 function App() {
   const [produtos,setProdutos] = useState([]);
@@ -22,6 +23,7 @@ function App() {
 
   return (
  <div>
+  <BarraMenu />
     <h1>Lista Produtos</h1>
     <ListaProdutos produtos = {produtos} />
     <CadastroProduto carregaProdutos= {carregaProdutos}/>
