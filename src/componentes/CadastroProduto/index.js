@@ -8,9 +8,19 @@ export default function CadastroProduto({carregaProdutos}) {
                 <label>Nome:</label>
                 <input type='text' id='nome' name='nome'>
                 </input>
+                <br/>
                 <label>Preço:</label>
                 <input type='text' id='preco' name='preco'>
                 </input>
+                <br/>
+                <label>foto:</label>
+                <input type='text' id='foto' name='foto'>
+                </input>
+                <br/>
+                <label>Descrição:</label>
+                <input type='text' id='descricao' name='descricao'>
+                </input>
+                <br/>
                 <button type='button' 
                 onClick={adicionaProduto}>Adicionar</button>
             </form>
